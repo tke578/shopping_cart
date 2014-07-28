@@ -60,7 +60,7 @@ test "product price must be positive" do
 							image_url: "fed.gif")
 
 	assert product.invalid?
-	assert_equal ["has already been taken"], product.errors[:title]
+	assert_equal ["has already been taken"], product.errrors[:title]
 
 	end
 end
